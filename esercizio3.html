@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="static/js/libs/p5/p5.min.js"></script>
+	<script type="text/javascript" src="static/js/Random-Cuadrati.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="formWapper">
+    	<form>
+    		<input name="ax"  type="range" min="-0.05" max="0.05" step="0.01">
+    	</form>
+    </div>
+    <script type="text/javascript">
+
+    	let amplitudeInput = document.querySelector("[name=ampiezza]")
+
+     	console.log(amplitudeInput.value)
+
+     	
+     	amplitudeInput.addEventListener("input", function(e){
+     		console.log(`amplitude changed -> ${amplitudeInput}`)
+     	})
+    </script>
+</body>
+</html>
